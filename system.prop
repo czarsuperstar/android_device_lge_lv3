@@ -1,0 +1,96 @@
+# Camera
+#persist.camera.HAL3.enabled=1
+persist.camera.is_type=0
+persist.camera.gyro.android=0
+camera.hal1.packagelist=com.skype.raider,com.google.android.talk
+#properties for limiting preview size in camera
+camera.display.umax=1920x1080
+camera.display.lmax=1280x720
+
+# Telephony
+DEVICE_PROVISIONED=1
+ril.subscription.types=NV,RUIM
+rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ro.telephony.default_network=9
+telephony.lteOnCdmaDevice=1
+ro.telephony.ril_class=LgeLteRIL
+#persist.qcril.disable_retry=true
+
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.custom_ecc=1
+persist.radio.sib16_support=1
+#persist.radio.mt_sms_ack=20
+
+#Optimal dex2oat threads for faster app installation
+ro.sys.fw.dex2oat_thread_count=4
+
+# system prop for opengles version
+#
+# 196609 is decimal for 0x30001 to report major/minor versions as 3/1
+ro.opengles.version=196609
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+persist.data.mode=concurrent
+
+ro.vendor.extension_library=libqti-perfd-client.so
+
+ro.sf.lcd_density=320
+
+# set dpm enable NSRM
+persist.dpm.feature=0
+#persist.sys.dpmd.nsrm=3
+
+# system props for the cne module
+persist.cne.feature=1
+
+# property to enable fingerprint
+persist.qfp=false
+
+#system props for time-services
+persist.timed.enable=true
+
+# Factory Reset Protection
+ro.frp.pst=/dev/block/bootdevice/by-name/persistent
+
+# Wi-Fi
+wifi.interface=wlan0
+
+ro.fm.transmitter=false
+
+# HWUI
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=2048
+
+# sensors
+persist.debug.sensors.hal=i
+debug.qualcomm.sns.daemon=i
+debug.qualcomm.sns.libsensor1=e
+persist.sensors.mag_filter_size=8
+
+# bluetooth
+#ro.bt.bdaddr_path=/data/misc/bdaddr
+qcom.bluetooth.soc=smd
+ro.qualcomm.bt.hci_transport=smd
